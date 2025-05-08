@@ -4,8 +4,17 @@ import './Home.css'
 const Home = () => {
   return (
     <>
-      Home
-      <h1>hello rahul</h1>
+    
+<h1>ankit</h1>
+
+
+
+
+
+
+
+
+
     </>
   )
 }
