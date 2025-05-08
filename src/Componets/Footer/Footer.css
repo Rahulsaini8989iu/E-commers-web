@@ -1,0 +1,218 @@
+footer {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+    margin-top: 200px;
+    /* margin-bottom: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 450px;
+}
+
+.newsletter {
+    background-color: #1a1a1a;
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    padding: 40px 20px;
+    border-radius: 12px;
+    top: -100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsletter h2 {
+    font-size: 33px;
+    /* margin-bottom: 20px; */
+}
+
+.subscribe-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subscribe-box input {
+    padding: 12px 20px;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    min-width: 250px;
+}
+
+.subscribe-box button {
+    padding: 12px 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    /* gap: 30px; */
+
+}
+
+.footer-section h1,
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 14px;
+
+}
+
+.payment-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+@media (max-width: 950px) {
+    .newsletter {
+        background-color: #1a1a1a;
+        width: 80%;
+        color: #fff;
+        position: absolute;
+        padding: 20px 20px;
+        border-radius: 12px;
+        top: -100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .subscribe-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-box input,
+    .subscribe-box button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 20px;
+        font-family: 'Verdana', sans-serif;
+        color: #333;
+        margin-top: 200px;
+        /* margin-bottom: 300px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 800px;
+    }
+
+    .footer-content {
+        width: 100%;
+        display: grid;
+        margin-top: 200px;
+        line-height: 20px;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        gap: 30px;
+
+    }
+}
+
+@media (max-width: 640px) {
+    .newsletter h2 {
+        font-size: 18px;
+        /* margin-bottom: 20px; */
+    }
+}
+
+@media (max-width: 450px){
+    .footer-content {
+        width: 100%;
+        display: grid;
+        margin-top: 150px;
+        line-height: 20px;
+        grid-template-columns:  auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 30px;
+
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 20px;
+        font-family: 'Verdana', sans-serif;
+        color: #333;
+        margin-top: 200px;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 1000px;
+    }
+
+}

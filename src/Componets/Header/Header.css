@@ -1,0 +1,33 @@
+.header-section{
+    background: #000;
+    color: #fff;
+}
+.text-section span{
+    text-decoration-line:underline ;
+   color: #fff;
+}
+.text-section span:hover{
+color: blue;
+cursor: pointer;
+}
+.header-section{
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.crros-section{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    cursor: pointer;
+}
+@media (max-width:400px) {
+    .text-section {
+        font-size: 10px;
+    }
+    .crros-section{
+        font-size: 1em;
+    }
+}
