@@ -4,8 +4,7 @@ import './Home.css'
 const Home = () => {
   return (
     <>
-    
-<h1>ankit</h1>
+
     </>
   )
 }
