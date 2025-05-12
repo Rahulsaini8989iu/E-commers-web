@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Componets/Header/Header'
-import {BrowserRouter, Routes,Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contect from './Pages/Contect/Contect';
 import Home from './Pages/HomePage/Home';
 import Navbar from './Componets/Navbar/Navbar';
@@ -16,21 +16,21 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-      <Header/>
-      <Navbar/>
-      <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/contect' element={<Contect/>} />
-      <Route path='/shop' element={<ShopPage/>} />
-      <Route path='/sale' element={<OnSalePage/>} />
-      <Route path='/new' element={<NewArrivalPage/>} />
-      <Route path='/brands' element={<BrandPage/>} />
-      <Route path='/cart' element={<AddCartPage/>} />
-      
-   
-      </Routes>
- <Footer/>
-   </BrowserRouter>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contect' element={<Contect />} />
+          <Route path='/shop' element={<ShopPage/>} />
+          <Route path='/sale' element={<OnSalePage />} />
+          <Route path='/new' element={<NewArrivalPage />} />
+          <Route path='/brands' element={<BrandPage />} />
+          <Route path='/cart' element={<AddCartPage />} />
+
+
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }
