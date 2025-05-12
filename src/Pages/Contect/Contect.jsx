@@ -11,7 +11,7 @@ const Contect = () => {
   <input type="email" />
   <label htmlFor="" type="password" className='label2' required >Password</label>
   <input type="Number" />
-  <div className='check'>
+  <div className='Check2'>
     <div style={{display:"flex"}}>
     <input type="checkbox" className='cbox'/>
       <p>Remind me</p>
