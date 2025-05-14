@@ -72,7 +72,32 @@ const AddCart = () => {
             </div>
           </div>
           <div className="header-flex-right">
-
+                <h2 className="right-heading">Order Summary</h2>
+                <div className="right-wali-div">
+                  <div className="right-wali-div1">
+                    <p className='right-wali-div-p'>Subtotal</p>
+                    <h4 className='right-wali-div-h'>$565</h4>
+                  </div>
+                  <div className="right-wali-div1">
+                    <p className='right-wali-div-p'>Discount (-20%)</p>
+                    <h4 className='right-wali-div-h' style={{ color:"red"}}>-$113</h4>
+                  </div>
+                  <div className="right-wali-div1" style={{ borderBottom:"1px solid #0000001A"}}>
+                    <p className='right-wali-div-p'>Delivery Fee</p>
+                    <h4 className='right-wali-div-h' >$15</h4>
+                  </div>
+                  <div className="right-wali-div1" >
+                    <p className='right-wali-div-p'>Total</p>
+                    <h4 className='right-wali-div-h'>$467</h4>
+                  </div>
+                </div>
+                <div className="cart-apply">
+                  <input type="text" placeholder='Add promo code' className='cart-apply-promo'/>
+                  <button className='cart-apply-butto'>Apply</button>
+                </div>
+                <div className="checkout-wali">
+                  <button className="checkout-btn">Go to Checkout <FiArrowRight style={{marginLeft: "20px"}}/> </button>
+                </div>
           </div>
         </div>
       </div>

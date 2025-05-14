@@ -95,7 +95,7 @@
 .flex-left-about {
     width: 320px;
     height: 150px;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 14px;
 }
 
@@ -150,7 +150,106 @@
 
 .header-flex-right {
     width: 44%;
-    height: 500px;
+    height: 540px;
     border: 1px solid silver;
     border-radius: 20px;
+}
+
+.right-heading{
+    font-size: 40px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.right-wali-div{
+    width: 90%;
+    height: 300px;
+    /* border: 1px solid; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.right-wali-div1{
+    width: 99%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-wali-div-p{
+    font-size: 25px;
+    color: #00000099;
+    font-weight: 300;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.right-wali-div-h{
+    font-size: 27px;
+}
+
+.cart-apply{
+    width: 95%;
+    height: 60px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cart-apply-promo{
+    width: 70%;
+    height: 55px;
+    background-color: #e1e1e1;
+    border-radius: 60px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+}
+
+.cart-apply-butto{
+    width: 25%;
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+.checkout-wali{
+    width: 99%;
+    height: 60px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.checkout-btn{
+    width: 90%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    border-radius: 60px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
