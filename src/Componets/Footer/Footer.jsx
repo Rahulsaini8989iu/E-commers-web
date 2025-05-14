@@ -72,6 +72,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>Shop.co © 2000-2025, All Rights Reserved</p>
+        <p>hello azaz</p>
         <div className="payment-icons">
           <SiVisa />
           <SiPaypal />
