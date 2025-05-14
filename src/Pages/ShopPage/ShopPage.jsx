@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Plus, Minus, ArrowBigRight, ArrowDown } from 'lucide-react';
 import { SlidersVertical, MoreVertical, Check } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import ProductList from '../../Componets/product/product';
 
 const ShopPage = () => {
 
@@ -248,12 +249,13 @@ const ShopPage = () => {
                   <div className="faqsss" key={index}>
                     <p
                       onClick={() => toggelAnswer(index)}
+                      className='questionP'
                     >
                       {faq.question}
-                      <ArrowDown style={{ height: "19px" }}/>
+                      <ArrowDown style={{ height: "19px" }} />
                     </p>
                     {openIndex === index && (
-                      <div className="answer">{faq.answer}</div>
+                      <p className='answerP'>{faq.answer}</p>
                     )}
                   </div>
                 ))}

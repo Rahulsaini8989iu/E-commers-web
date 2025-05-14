@@ -513,9 +513,23 @@
     text-decoration: underline;
     cursor: pointer;
 }
-.faqsss p{
+.faqsss{
     font-family: arial;
     width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+    gap: 8px;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+.faqsss .questionP{
+    font-family: arial;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -525,4 +539,17 @@
     letter-spacing: 1px;
     gap: 8px;
     border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+.answerP{
+    font-family: arial;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+    gap: 8px;
+    /* background-color: grey; */
 }

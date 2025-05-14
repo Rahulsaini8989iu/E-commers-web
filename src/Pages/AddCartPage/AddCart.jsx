@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './AddCart.css'
 import { FiArrowRight } from 'react-icons/fi'
@@ -81,3 +82,4 @@ const AddCart = () => {
 }
 
 export default AddCart
+

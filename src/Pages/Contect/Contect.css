@@ -38,7 +38,7 @@ input{
     height: 20px;
     width: 20px;
 }
-.check{
+.Check2{
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -55,6 +55,7 @@ input{
 @media (max-width:445px){
     h1{
         font-size: 25px;
+        text-shadow:5px 10px 20px silver;
     }
     .label1{
         margin-left: -220px;
