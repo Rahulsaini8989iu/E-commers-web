@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Plus, Minus, ArrowBigRight, ArrowDown } from 'lucide-react';
 import { SlidersVertical, MoreVertical, Check } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import ProductList from '../../Componets/product/product';
 
 const ShopPage = () => {
 
@@ -45,7 +46,37 @@ const ShopPage = () => {
       lorem: "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
       posted: 'Posted on August 19, 2023'
     }
-  ]
+  ];
+
+  const faqs = [
+    {
+      question: "Q. Where do you Ship?",
+      answer: "We ship worldwide except a few restricted countries."
+    },
+    {
+      question: "Q. Can I cancel my order?",
+      answer: "Yes, you can cancel your order within 24 hours."
+    },
+    {
+      question: "How can I track my order?",
+      answer: "You can track your order using the tracking link sent to your email."
+    },
+    {
+      question: "Why can't I see any shipping process when I track my order?",
+      answer: "Tracking updates can be delayed by 24–48 hours."
+    },
+    {
+      question: "Do you allow exchanges or return?",
+      answer: "Yes, we allow returns within 15 days under certain conditions."
+    }
+  ];
+
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggelAnswer = (index) => {
+    setOpenIndex(openIndex === index ? null : index)
+  };
 
   const images = [
     "/public/image 1@2x.png",
@@ -206,26 +237,34 @@ const ShopPage = () => {
           <div className='faqs-component'>
             <div className="faqs-main-1">
               <h1>FAQ</h1>
-            <p>These are the most frequently asked questoins. <br />
-            if you have any questoins, please <span>contact us.</span></p>
+              <p>These are the most frequently asked questoins. <br />
+                if you have any questoins, please <span>contact us.</span></p>
             </div>
 
             <div className="faqs-main-2">
               <div className="faqs-main3">
-                <li className='offwhite'>Shipping has changed for international orders due to the current 
-                pandemic situation. Please read <span>here</span></li>
-
-                <p>Q. Where do you Ship? <ArrowDown style={{height:'19px'}}/></p>
-                <p>Q. Can I cancel my order? <ArrowDown style={{height:'19px'}}/></p>
-                <p>How can i track my order? <ArrowDown style={{height:'19px'}}/></p>
-                <p>Why can't I see any shippig process when I track my order? <ArrowDown style={{height:'19px'}}/></p>
-                <p>Do you allow exchanges or return? <ArrowDown style={{height:'19px'}}/></p>
+                <li className='offwhite'>Shipping has changed for international orders due to the current
+                  pandemic situation. Please read <span>here</span></li>
+                {faqs.map((faq, index) => (
+                  <div className="faqsss" key={index}>
+                    <p
+                      onClick={() => toggelAnswer(index)}
+                      className='questionP'
+                    >
+                      {faq.question}
+                      <ArrowDown style={{ height: "19px" }} />
+                    </p>
+                    {openIndex === index && (
+                      <p className='answerP'>{faq.answer}</p>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         )}
 
-        <button className='load-more'>Load More <ArrowBigRight/></button>
+        <button className='load-more'>Load More <ArrowBigRight /></button>
         {/* <<<Details-Rating-FAQs-Section>>> */}
       </div>
 
