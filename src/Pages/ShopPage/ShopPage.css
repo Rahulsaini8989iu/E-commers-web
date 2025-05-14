@@ -382,12 +382,12 @@
 .mini-page{
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
+    row-gap: 10px;
     border: 1px solid #000300;
     padding: 20px 40px;
     border-radius: 20px;
     width: 40%;
-    height: 210px;
+    height: 22      0px;
 }
 .mini-page b{
     display: flex;
@@ -395,7 +395,7 @@
     align-items: center;
 }
 .mini-page span{
-    display: flex;
+    display: flex;              
     justify-content: start;
     align-items: center;
     font-size: 15px;
@@ -418,6 +418,7 @@
     justify-content: center;
     align-items: center;
     padding-inline: 3px 3px;
+    margin-top: 0px;
 }
 
 .load-more{
@@ -512,7 +513,7 @@
     text-decoration: underline;
     cursor: pointer;
 }
-.faqs-main3 p{
+.faqsss p{
     font-family: arial;
     width: 60%;
     height: 60px;
