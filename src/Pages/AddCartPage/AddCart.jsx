@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './AddCart.css'
 import { FiArrowRight } from 'react-icons/fi'
@@ -62,7 +63,7 @@ const AddCart = () => {
                 <h2 className='price'>Price</h2>
               </div>
               <div className="flex-left-buttons">
-                <p style={{cursor:"pointer"}}npm ><Trash2 color='red' size={24} /></p>
+                <p style={{cursor:"pointer"}}><Trash2 color='red' size={24} /></p>
                 <div className="buttons-div">
                   <p style={{cursor:"pointer"}}>-</p>
                   <p>1</p>
@@ -106,3 +107,4 @@ const AddCart = () => {
 }
 
 export default AddCart
+
