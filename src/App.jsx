@@ -9,13 +9,15 @@ import ShopPage from './Pages/ShopPage/ShopPage'
 import OnSalePage from './Pages/OnSalePage/OnSale'
 import NewArrivalPage from './Pages/NewArrivalPage/NewArrival'
 import BrandPage from './Pages/BrandPage/Brand'
-import AddCartPage from './Pages/AddCartPage/AddCart'
+import Addcard from './Pages/addcard/card.jsx'
+import { CartProvider } from './Componets/context/CartContext.jsx';
 
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+      <CartProvider>
         <Header />
         <Navbar />
         <Routes>
@@ -25,11 +27,10 @@ const App = () => {
           <Route path='/sale' element={<OnSalePage />} />
           <Route path='/new' element={<NewArrivalPage />} />
           <Route path='/brands' element={<BrandPage />} />
-          <Route path='/cart' element={<AddCartPage />} />
-
-
+          <Route path='/cart' element={<Addcard />} />
         </Routes>
         <Footer />
+        </CartProvider>
       </BrowserRouter>
     </>
   )

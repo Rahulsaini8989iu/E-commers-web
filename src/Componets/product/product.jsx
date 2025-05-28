@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './Product.css';
-// import { CartContext } from '../context/Cartcontext';
+import { CartContext } from '../context/CartContext';
 
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [isDark, setIsDark] = useState(false);
-//   const {addToCart} = useContext(CartContext);
+  const {addToCart} = useContext(CartContext);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -15,9 +15,9 @@ const ProductList = () => {
       .catch(err => console.log("Error fetching products:", err));
   }, []);
 
-//   const handleAddToCart = (data) => {
-//     addToCart(data)
-//   }
+  const handleAddToCart = (data) => {
+    addToCart(data)
+  }
 
 
 
